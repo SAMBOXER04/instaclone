@@ -153,7 +153,7 @@ router.post("/update", isLoggedIn, async function (req, res) {
   req.login(user, function (err) {
     if (err) throw err;
     res.redirect("/profile");
-  });
+  }); 
 });
 
 router.post(
